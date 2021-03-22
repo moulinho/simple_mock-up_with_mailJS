@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* The navigation menu */
+#navbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  padding-bottom: 50px;
+  /* overflow: hidden; */
+  background: rgba(255, 0, 0, 0.9);
+  z-index: 2;
+}
+
+/* Navigation links */
+#navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+#navbar a:hover,
+.subnav:hover .subnavbtn {
+  background: rgba(255, 0, 0, 0.9);
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background: rgba(111, 93, 93, 0.9);
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+.banner {
+  width: 100%;
+  height: 60vh;
+  background: url(../img/N3.jpg) no-repeat center/cover;
+  position: relative;
+  padding: 0;
+}
+
+.description {
+  padding: 2rem;
+}
+
+.article .detail_article {
+  width: 100%;
+  display: flex;
+}
+.owl-carousel {
+  text-align: center;
+  text-align: -webkit-center;
+}
+.item {
+  width: 200px;
+  overflow: hidden;
+}
+.item p {
+  margin: 20px 0px;
+  text-align: justify;
+  text-align: -webkit-justify;
+}
+
+.owl-carousel .item img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  transition: 0.5s ease;
+}
+.owl-carousel .item img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.about-us h3 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about-us_container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background: url(../img/te3.jpg) no-repeat center/cover;
+}
+
+.detail_about {
+  width: 230px;
+  margin: 0px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0);
+}
+
+.detail_about .quotation {
+  font-size: 20px;
+  font-weight: bold;
+}
+.detail_about p:nth-of-type(1) {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+.detail_about p:nth-of-type(2) {
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+.detail_about img {
+  width: 100%;
+  border-radius: 100% 0 100% 80%;
+}
+
+.footer h2 {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  background: #fff;
+}
+.container_footer {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.85);
+  color: #fff;
+}
+
+.infos div {
+  position: relative;
+  top: 30%;
+  margin: 30px 0;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+}
+.social a {
+  transition: all 0.3s ease;
+}
+.social .symbol1 {
+  font-size: 20px;
+  padding: 10px;
+  color: #fff;
+  background: #2342c0;
+  border-radius: 50%;
+}
+.social .symbol2 {
+  font-size: 34px;
+  padding: 10px;
+  color: #2382d4;
+  background: #fff;
+}
+.social a:hover {
+  box-shadow: 0px 10px 5px #aaaaaa;
+  transform: translateY(-10px);
+}
+
+.social img {
+  width: 8vh;
+  padding: 0 5px;
+  border-radius: 50%;
+}
+
+.form_content {
+  width: 300px;
+}
+
+.form_content input {
+  border: 0;
+  color: darkcyan;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  margin: 10px 0;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.2s ease;
+  background: transparent;
+}
+
+.form_content input:focus {
+  transform: translateX(1);
+  transition: all 0.5s ease;
+  border-bottom-color: darkcyan;
+}
+::placeholder {
+  font-size: 12px;
+  font-weight: bold;
+  color: darkcyan;
+  font-style: oblique;
+}
+.form_content label {
+  position: relative;
+  font-size: 18px;
+  top: 10px;
+}
+
+.form_content textarea {
+  width: 100%;
+  margin: 10px 0;
+  border: 2px solid darkcyan;
+  color: darkcyan;
+  font-size: 18px;
+}
+.form_content textarea::placeholder {
+  font-size: 20px;
+}
+.form_content textarea:focus {
+  outline: none;
+}
+.submit {
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  color: #eee;
+  border: 1px solid darkcyan;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: bold;
+  outline: none;
+  transition: 0.5s ease;
+  background: transparent;
+}
+.submit:hover {
+  box-shadow: inset 0 0 0 30px darkcyan, 1px 1px 3px #333;
+  transform: translateY(-4px);
+  color: #eee;
+}
+.submit:active {
+  transform: scale(0.95);
+}
+.copyright {
+  padding: 12px;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.9);
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar a {
+    padding: 14px 3px;
+  }
+  /* Subnav button */
+  .subnav .subnavbtn {
+    padding: 14px 6px;
+    font-weight: bold;
+  }
+  .description {
+    text-align: justify;
+  }
+  .about-us_container {
+    display: block;
+  }
+  .detail_about {
+    width: 100%;
+    margin: 30px 0px;
+  }
+  .detail_about img {
+    width: 75%;
+    margin: 0px 2.35em;
+  }
+  .about-us_container {
+    background: none;
+  }
+  .detail_about p:nth-of-type(1) {
+    color: black;
+  }
+  .detail_about p:nth-of-type(2) {
+    color: black;
+  }
+  .container_footer {
+    flex-flow: column-reverse;
+
+    padding: 10px auto;
+  }
+  .form_content {
+    width: 100%;
+    text-align: center;
+  }
+  .form_content input {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    margin: 15px 0;
+  }
+  ::placeholder {
+    text-align: center;
+  }
+  .submit {
+    color: #eee;
+    background: darkcyan;
+  }
+  .submit:hover {
+    box-shadow: none;
+  }
+  .social {
+    margin: 10px auto;
+  }
+  .infos {
+    text-align: center;
+  }
+}
